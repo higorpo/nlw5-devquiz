@@ -12,7 +12,10 @@ class QuizWidget extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          Text(title, style: AppTextStyles.heading),
+          Padding(
+            padding: const EdgeInsets.only(top: 48.0),
+            child: Text(title, style: AppTextStyles.heading),
+          ),
           SizedBox(height: 24),
           AnswerWidget(
             isSelected: true,
